@@ -75,7 +75,7 @@ const Main = () => {
 
         <ul className={classes.main_content}>
           {checkboxes.map((isChecked, index) => (
-            <li style={{width:'100%',display:'flex',justifyContent:'space-around',flexDirection:'column'}} key={index}>
+            <li style={{minWidth:'100%',display:'flex',justifyContent:'space-around',flexDirection:'column'}} key={index}>
               <div style={{width:'100%',display:'flex',justifyContent:'space-around'}}>
               <div >
               <h2 style={{ color: 'rgba(0, 98, 255, 0.744)' }}>Hello</h2>
