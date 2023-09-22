@@ -7,7 +7,7 @@ const Header = () => {
     <div className={classes.header_container}>
         <Burger/>
         <div className={classes.header_navigation}>
-        <p className={classes.information}>Let's start dear Singer!</p>
+        <p className={classes.information}>Let's start dear <span style={{color:'rgba(255, 0, 0, 0.498)'}}>Singer</span> !</p>
         
         
         </div>

@@ -55,7 +55,7 @@ import imageTrain from '../../assets/images/pngwing.com.png';
 import imageLanguage from '../../assets/images/languages.png';
 
 const Main = () => {
-  const [checkboxes, setCheckboxes] = useState(Array(10).fill(false)); // Создаем массив чекбоксов и инициализируем их состояние как false
+  const [checkboxes, setCheckboxes] = useState(Array(30).fill(false)); // Создаем массив чекбоксов и инициализируем их состояние как false
 
   // Функция для обработки изменения состояния чекбокса
   const handleCheckboxChange = (index) => {
@@ -67,7 +67,7 @@ const Main = () => {
   return (
     <div className={classes.main_wrapper}>
       <Header />
-      <hr style={{ color: 'blue', maxWidth: '300px' }} />
+      {/* <hr style={{ color: 'blue', maxWidth: '500px' }} /> */}
 
       <div className={classes.main_container}>
         <img className={classes.main_train} src={imageTrain} alt="Train Image" />
@@ -78,8 +78,8 @@ const Main = () => {
             <li style={{minWidth:'100%',display:'flex',justifyContent:'space-around',flexDirection:'column'}} key={index}>
               <div style={{width:'100%',display:'flex',justifyContent:'space-around',alignItems:'center',alignContent:'center'}}>
               <div >
-              <h2 style={{ color: 'rgba(0, 98, 255, 0.744)' }}>Hello</h2>
-              <p style={{ color: 'rgba(0, 203, 0, 0.403)' }}>Привет</p>
+              <h2 style={{ color: 'rgba(0, 98, 255, 0.744)',margin:'3px 0'}}>Hello</h2>
+              <p style={{ color: 'rgba(0, 203, 0, 0.403)',margin:'3px 0'  }}>Привет</p>
               
               </div>
               <input
@@ -96,7 +96,9 @@ const Main = () => {
           ))}
           
         </ul>
+        
       </div>
+      <MyButton>button</MyButton>
     </div>
   );
 };
